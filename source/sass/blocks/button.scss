@@ -9,3 +9,12 @@
   text-transform: uppercase;
   background-color: #68b738;
 }
+
+
+@media (min-width: $tablet) {
+  .button {
+    width: 246px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

@@ -27,3 +27,38 @@
   text-align: center;
 }
 
+@media (min-width: $tablet) {
+
+  .promo {
+    padding-top: 0;
+    background-image: none;
+    color: #111111;
+  }
+
+  .promo-wrapper {
+    position: relative;
+    padding: 60px 120px 0 120px;
+  }
+
+  .promo__title {
+    margin: 0 0 39px 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__subtitle {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__link {
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 0;
+    padding: 16px 0 16px 0;
+    font-size: 20px;
+  }
+}

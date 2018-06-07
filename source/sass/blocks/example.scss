@@ -4,17 +4,23 @@
 
 .example__heading {
   margin: 0 0 34px 0;
+  padding: 0 20px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 }
 
 .example__description {
-  padding-right: 10px;
+  margin: 0 0 27px 0;
+  padding: 0 30px 0 20px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+}
+
+.example__list-wrapper {
+  padding: 0 20px;
 }
 
 .example__list {
@@ -64,6 +70,10 @@
 .example__cost {
   margin-bottom: 45px;
   text-align: center;
+
+  br {
+    display: none;
+  }
 }
 
 .example__image-wrapper {
@@ -109,4 +119,105 @@
   background-color: #68b738;
   border-radius: 10px;
   border: none;
+}
+
+@media (min-width: $tablet) {
+  .example {
+    background-image: linear-gradient(to top, #f2f2f2 450px, #ffffff 450px);
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .example__heading {
+    margin: 0 0 57px 0;
+    padding: 0 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    margin: 0 0 57px 0;
+    padding: 0 30px;
+    font-size: 16px;
+    left: 24px;
+  }
+
+  .example__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+    padding: 0 30px;
+  }
+
+  .example__list {
+    margin: 0;
+  }
+
+  .example__item {
+    width: 162px;
+    height: 70px;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .example__property {
+    top: 56px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .example__cost {
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-align: right;
+
+    br {
+      display: block;
+    }
+  }
+
+  .example__price {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__difference {
+    padding: 0 30px;
+  }
+
+  .example__controls {
+    width: 80%;
+  }
+
+  .example__button {
+    padding: 0 0 3px 0;
+    font-size: 20px;
+    border-bottom: 1px dotted #bebebe;
+  }
+
+  .example__scale {
+    width: 430px;
+    height: 8px;
+    padding: 0 5px;
+    background-color: #dcdcdc;
+  }
+
+  .example__toggle {
+    align-self: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 12px solid #fff;
+    box-shadow: 0 0 0 1px #dcdcdc;
+  }
 }

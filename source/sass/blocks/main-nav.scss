@@ -6,7 +6,8 @@
   display: flex;
   justify-content: space-between;
   min-height: 65px;
-  border-bottom: 1px solid #e6e6e6;
+  width: 280px;
+  margin: 0 auto;
 }
 
 
@@ -51,6 +52,24 @@
 }
 
 @media (min-width: $tablet) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .main-nav__top-wrapper {
+    width: 192px;
+    margin: 0;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
   .main-nav__logo {
     display: none;
   }

@@ -15,3 +15,20 @@
 .main__contacts-section {
   padding-top: 30px;
 }
+
+
+@media (min-width: $tablet) {
+  .main__promo {
+    margin-bottom: 0;
+  }
+
+  .main__advantages {
+    padding-top: 45px;
+    padding-bottom: 103px;
+  }
+
+  .main__example {
+    padding-top: 43px;
+    padding-bottom: 39px;
+  }
+}
