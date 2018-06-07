@@ -195,6 +195,10 @@
     padding: 0 30px;
   }
 
+  .example__image-wrapper {
+    margin-bottom: 30px;
+  }
+
   .example__controls {
     width: 80%;
   }
@@ -214,10 +218,10 @@
 
   .example__toggle {
     align-self: center;
-    width: 8px;
-    height: 8px;
+    width: 20px;
+    height: 25px;
     border-radius: 50%;
-    border: 12px solid #fff;
+    border: 8px solid #fff;
     box-shadow: 0 0 0 1px #dcdcdc;
   }
 }

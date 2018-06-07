@@ -16,3 +16,25 @@
 .social-list__link--insta {
   margin: 0 39px;
 }
+
+@media(min-width: $tablet) {
+  .social-list {
+    padding: 0;
+    border: none;
+  }
+
+  .social-list__link--insta svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__link--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__link--fb svg {
+    width: 14px;
+    height: 28px;
+  }
+}

@@ -14,3 +14,10 @@
 .copyright svg {
   fill: #666666;
 }
+
+@media(min-width: $tablet) {
+  .copyright__html {
+    display: inline-block;
+    margin-right: 20px;
+  }
+}

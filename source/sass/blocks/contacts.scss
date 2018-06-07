@@ -16,3 +16,27 @@
   line-height: 20px;
   color: #444444;
 }
+
+@media (min-width: $tablet) {
+  .contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 72px;
+  }
+
+  .contacts__appeal {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    width: 155px;
+    font-size: 16px;
+
+    span {
+      display: inline-block;
+      margin-top: 20px;
+    }
+  }
+}

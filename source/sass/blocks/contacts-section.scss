@@ -1,3 +1,9 @@
 .contacts-section__address {
   margin-bottom: 25px;
 }
+
+@media (min-width: $tablet) {
+  .contacts-section__address {
+   margin-bottom: 60px;
+  }
+}

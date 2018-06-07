@@ -12,3 +12,25 @@
 .footer__social-list {
   margin-bottom: 21px;
 }
+
+
+@media(min-width: $tablet) {
+  .footer {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo-wrapper {
+    margin-bottom: 0;
+  }
+
+  .footer__social-list {
+    margin-bottom: 0;
+  }
+}
