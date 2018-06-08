@@ -23,9 +23,13 @@
     border: none;
   }
 
-  .social-list__link--insta svg {
-    width: 23px;
-    height: 23px;
+  .social-list__link--insta {
+    margin: 0 29px;
+
+    svg {
+      width: 23px;
+      height: 23px;
+    }
   }
 
   .social-list__link--vk svg {
@@ -36,5 +40,12 @@
   .social-list__link--fb svg {
     width: 14px;
     height: 28px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .social-list__link--insta {
+    margin: 0 29px;
   }
 }

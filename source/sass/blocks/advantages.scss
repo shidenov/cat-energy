@@ -135,3 +135,9 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .advantages__item {
+    margin-right: 0;
+  }
+}

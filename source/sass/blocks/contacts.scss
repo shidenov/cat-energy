@@ -40,3 +40,10 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts {
+    width: 570px;
+    padding: 67px 90px 60px 77px;
+  }
+}

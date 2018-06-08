@@ -139,3 +139,51 @@
     line-height: 20px;
   }
 }
+
+
+@media(min-width: $desktop) {
+  .programm__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programm__item {
+    width: 570px;
+    margin: 0;
+    padding: 75px 54px 60px 53px;
+  }
+
+  .programm__item-description {
+    margin: 0 0 35px 0;
+
+    br {
+      display: none;
+    }
+  }
+
+  .programm__item-heading {
+    margin: 0 0 75px 0;
+    padding-left: 162px;
+
+    &::before {
+      margin-left: -161px;
+      margin-top: -27px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      width: 70px;
+      height: 97px;
+      margin-left: -300px;
+      margin-top: -30px;
+    }
+
+    &--pro::after {
+      width: 134px;
+      height: 56px;
+      margin-left: -385px;
+      margin-top: -5px;
+    }
+  }
+}

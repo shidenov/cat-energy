@@ -7,3 +7,20 @@
    margin-bottom: 60px;
   }
 }
+
+@media (min-width: $desktop) {
+  .contacts-section {
+    position: relative;
+  }
+
+  .contacts-section__address {
+    position: absolute;
+    z-index: 1;
+    top: 86px;
+    left: 50px;
+    margin-bottom: 0;
+    background-color: #ffffff;
+  }
+
+
+}

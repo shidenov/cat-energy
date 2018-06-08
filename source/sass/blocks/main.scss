@@ -31,4 +31,23 @@
     padding-top: 43px;
     padding-bottom: 67px;
   }
+  .main__contacts-section {
+    padding-top: 65px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .main__advantages {
+    padding-top: 75px;
+    padding-bottom: 0;
+  }
+
+  .main__example {
+    padding-top: 40px;
+  }
+
+  .main__contacts-section {
+    padding-top: 0;
+  }
 }

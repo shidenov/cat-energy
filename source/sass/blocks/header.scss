@@ -3,3 +3,9 @@
     padding-top: 22px;
   }
 }
+
+@media (min-width: $desktop) {
+  .header {
+    padding-top: 54px;
+  }
+}

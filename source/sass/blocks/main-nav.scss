@@ -81,6 +81,10 @@
 }
 
 @media (min-width: $desktop) {
+  .main-nav {
+    width: 1220px;
+  }
+
   .main-nav__cat-picture {
     width: 202px;
     height: 59px;
