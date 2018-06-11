@@ -1,0 +1,9 @@
+.extra__list {
+  margin-bottom: 40px;
+}
+
+@media(min-width: $tablet) {
+  .extra__list {
+    margin-bottom: 69px;
+  }
+}

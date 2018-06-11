@@ -16,6 +16,9 @@
   padding-top: 30px;
 }
 
+.main__extra {
+  padding-bottom: 35px;
+}
 
 @media (min-width: $tablet) {
   .main__promo {
@@ -33,6 +36,14 @@
   }
   .main__contacts-section {
     padding-top: 65px;
+  }
+
+  .main__innner-page-title {
+    margin: 55px 0 155px 0;
+  }
+
+  .main__catalog {
+    margin-bottom: 67px;
   }
 }
 

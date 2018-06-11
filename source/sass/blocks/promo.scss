@@ -67,6 +67,7 @@
     // position: absolute;
     // margin-top: -420px;
     // margin-left: 0;
+    width: 245px;
     padding: 16px 0 16px 0;
     font-size: 20px;
   }
@@ -84,10 +85,11 @@
       z-index: -1;
       top: -123px;
       right: 0;
-      width: 650px;
+      width: 50%;
       height: 695px;
       background-image: url("../img/index-background-desktop@2x.jpg");
-      background-size: 780px auto;
+      background-size: cover;
+      background-color: #64a83b;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
