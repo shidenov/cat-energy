@@ -45,6 +45,10 @@
   .main__catalog {
     margin-bottom: 67px;
   }
+
+  .main__extra {
+    padding-bottom: 75px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -60,5 +64,17 @@
 
   .main__contacts-section {
     padding-top: 0;
+  }
+
+  .main__innner-page-title {
+    margin: 73px 0 157px 0;
+  }
+
+  .main__catalog {
+    margin-bottom: 75px;
+  }
+
+  .main__extra {
+    padding-bottom: 85px;
   }
 }

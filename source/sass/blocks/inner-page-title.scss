@@ -16,3 +16,9 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop) {
+  .inner-page-title {
+    padding: 0 40px;
+  }
+}

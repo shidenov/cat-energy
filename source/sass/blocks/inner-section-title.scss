@@ -22,7 +22,6 @@
 @media(min-width: $tablet) {
   .inner-section-title {
     width: 768px;
-    margin: 0 auto 77px auto;
     padding: 0 67px;
     font-size: 36px;
     line-height: 36px;
@@ -41,6 +40,17 @@
       width: 322px;
       margin-top: 22px;
       margin-left: 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .inner-section-title {
+    width: 1300px;
+    padding: 0 40px;
+
+    &::after {
+      width: 880px;
     }
   }
 }

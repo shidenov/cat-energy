@@ -69,4 +69,11 @@
     background-color: #ffffff;
   }
 
+  .header--catalog .site-list a {
+    color: #111111;
+  }
+
+  .header--catalog .site-list__item--active::after {
+    background-color: #68b738;
+  }
 }

@@ -31,6 +31,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  color: #444444;
 }
 
 .food__order {
@@ -71,5 +72,38 @@
 
   .food__order {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .food {
+    width: 895px;
+  }
+
+  .food__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 0;
+    border-right: none;
+    border-left: none;
+  }
+
+  .food__description {
+    margin-bottom: 0;
+  }
+
+  .food__item-title {
+    width: 285px;
+  }
+
+  .food__price-wrapper {
+    justify-content: space-between;
+    width: 285px;
+  }
+
+  .food__order {
+    width: 245px;
+    padding: 11px 0 9px;
   }
 }

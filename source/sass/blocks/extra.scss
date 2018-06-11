@@ -6,4 +6,19 @@
   .extra__list {
     margin-bottom: 69px;
   }
+
+  .extra__title {
+    margin-bottom: 77px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .extra__list {
+    margin-bottom: 0;
+  }
+
+  .extra__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
