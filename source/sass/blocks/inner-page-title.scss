@@ -8,6 +8,10 @@
   border-bottom: 1px solid #ededed;
 }
 
+.inner-page-title--form {
+  border-bottom: none;
+}
+
 @media(min-width: $tablet) {
   .inner-page-title {
     padding: 0 30px;

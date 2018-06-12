@@ -878,6 +878,9 @@ input[type="radio"].visually-hidden {
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #ededed; }
 
+.inner-page-title--form {
+  border-bottom: none; }
+
 @media (min-width: 768px) {
   .inner-page-title {
     padding: 0 30px;
@@ -905,6 +908,9 @@ input[type="radio"].visually-hidden {
 
 .main__extra {
   padding-bottom: 35px; }
+
+.main__selection {
+  padding-bottom: 28px; }
 
 @media (min-width: 768px) {
   .main__promo {
@@ -1131,11 +1137,25 @@ input[type="radio"].visually-hidden {
     z-index: -1;
     left: 0;
     right: 0;
-    margin-left: 21px;
+    margin-left: 164px;
     margin-top: 13px;
     width: auto;
     height: 3px;
     background-color: #68b738; }
+
+.inner-section-title--contacts {
+  margin: 0 0 31px 0;
+  padding: 0 25px 0 0; }
+  .inner-section-title--contacts::after {
+    margin-top: -10px; }
+
+.inner-section-title--comments {
+  margin-bottom: 32px;
+  padding: 0 25px 0 0; }
+
+.inner-section-title--add {
+  margin-bottom: 39px;
+  padding: 0 25px 0 0; }
 
 @media (min-width: 768px) {
   .inner-section-title {
@@ -1334,6 +1354,136 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
+
+.selection__subtitle {
+  margin: 0 0 40px 0;
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase; }
+
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none; }
+  .form__group--initials {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ededed; }
+  .form__group--radio {
+    padding-top: 29px;
+    border-bottom: 1px solid #ededed; }
+  .form__group--contacts {
+    padding-top: 31px; }
+  .form__group--comments {
+    padding-top: 13px;
+    padding-bottom: 28px; }
+  .form__group--add {
+    padding-bottom: 13px; }
+
+.form__row {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase; }
+  .form__label--input {
+    margin-right: 15px; }
+  .form__label--radio {
+    display: block;
+    margin-bottom: 25px;
+    padding-left: 46px; }
+    .form__label--radio::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      margin-left: -46px;
+      margin-top: -6px;
+      background-color: #fff;
+      border: 9px solid #fff;
+      -webkit-box-shadow: 0 0 0 1px #cecece;
+              box-shadow: 0 0 0 1px #cecece;
+      border-radius: 50%; }
+  .form__label--email, .form__label--tel {
+    margin-right: 12px; }
+  .form__label--checkbox {
+    margin-bottom: 26px;
+    padding-left: 46px; }
+    .form__label--checkbox::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      margin-left: -46px;
+      margin-top: -6px;
+      border: 1px solid #cfcfcf; }
+
+.form__input--radio:checked + .form__label--radio::before {
+  background-color: #68b738; }
+
+.form__input--checkbox:checked + .form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  margin-top: 0;
+  left: 4px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg"); }
+
+.form__input {
+  margin-bottom: 15px;
+  padding: 13px;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7; }
+  .form__input--text, .form__input--tel, .form__input--email {
+    width: 100%; }
+  .form__input--textarea {
+    width: 100%;
+    min-height: 150px;
+    margin: 0;
+    resize: none; }
+  .form__input:focus, .form__input:active {
+    outline-color: #68b738; }
+
+.form__order {
+  margin-bottom: 20px;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none; }
+
+.form__required {
+  margin: 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 16px; }
+
+.form__row--svg {
+  position: relative;
+  width: 100%; }
+
+.form__svg--tel,
+.form__svg--mail {
+  position: absolute;
+  margin-top: 13px;
+  right: 17px;
+  fill: #222222; }
+
+.form__svg--tel {
+  right: 14px; }
 
 .promo {
   padding-top: 27px;

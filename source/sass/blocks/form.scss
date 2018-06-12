@@ -1,0 +1,160 @@
+.form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--initials {
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &--radio {
+    padding-top: 29px;
+    border-bottom: 1px solid #ededed;
+  }
+
+  &--contacts {
+    padding-top: 31px;
+  }
+
+  &--comments {
+    padding-top: 13px;
+    padding-bottom: 28px;
+  }
+
+  &--add {
+    padding-bottom: 13px;
+  }
+}
+
+.form__row {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &--input {
+    margin-right: 15px;
+  }
+
+  &--radio {
+    display: block;
+    margin-bottom: 25px;
+    padding-left: 46px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 30px;
+      margin-left: -46px;
+      margin-top: -6px;
+      background-color: #fff;
+      border: 9px solid #fff;
+      box-shadow: 0 0 0 1px #cecece;
+      border-radius: 50%;
+    }
+  }
+
+  &--email,
+  &--tel {
+    margin-right: 12px;
+  }
+
+  &--checkbox {
+    margin-bottom: 26px;
+    padding-left: 46px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      margin-left: -46px;
+      margin-top: -6px;
+      border: 1px solid #cfcfcf;
+    }
+  }
+}
+
+.form__input--radio:checked + .form__label--radio::before {
+  background-color: #68b738;
+}
+
+.form__input--checkbox:checked +.form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  margin-top: 0;
+  left: 4px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+}
+
+.form__input {
+  margin-bottom: 15px;
+  padding: 13px;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  &--text,
+  &--tel,
+  &--email {
+    width: 100%;
+  }
+
+  &--textarea {
+    width: 100%;
+    min-height: 150px;
+    margin: 0;
+    resize: none;
+  }
+
+  &:focus,
+  &:active {
+    outline-color: #68b738;
+  }
+}
+
+.form__order {
+  margin-bottom: 20px;
+  font-family: "OswaldRegular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+}
+
+.form__required {
+  margin: 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+}
+
+.form__row--svg {
+  position: relative;
+  width: 100%;
+}
+
+.form__svg--tel,
+.form__svg--mail {
+  position: absolute;
+  margin-top: 13px;
+  right: 17px;
+  fill: #222222;
+}
+
+.form__svg--tel {
+  right: 14px;
+}

@@ -13,7 +13,7 @@
     z-index: -1;
     left: 0;
     right: 0;
-    margin-left: 21px;
+    margin-left: 164px;
     margin-top: 13px;
     width: auto;
     height: 3px;
@@ -21,6 +21,24 @@
   }
 }
 
+.inner-section-title--contacts {
+  margin: 0 0 31px 0;
+  padding: 0 25px 0 0;
+
+  &::after{
+    margin-top: -10px;
+  }
+}
+
+.inner-section-title--comments {
+  margin-bottom: 32px;
+  padding: 0 25px 0 0;
+}
+
+.inner-section-title--add {
+  margin-bottom: 39px;
+  padding: 0 25px 0 0;
+}
 
 @media(min-width: $tablet) {
   .inner-section-title {
