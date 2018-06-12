@@ -1118,47 +1118,46 @@ input[type="radio"].visually-hidden {
     width: 170px; } }
 
 .inner-section-title {
-  position: relative;
-  width: 320px;
+  display: inline-block;
   margin: 0 auto;
-  padding: 30px 0 30px 20px;
+  padding: 30px 25px 30px 0;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400; }
+  font-weight: 400;
+  background-color: #ffffff; }
   .inner-section-title::after {
     content: "";
     position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin-left: 21px;
     margin-top: 13px;
-    margin-left: 22px;
-    width: 53px;
+    width: auto;
     height: 3px;
     background-color: #68b738; }
 
 @media (min-width: 768px) {
   .inner-section-title {
-    width: 768px;
-    padding: 0 67px;
+    padding: 0 37px;
     font-size: 36px;
     line-height: 36px; }
+    .inner-section-title::after {
+      content: none; }
     .inner-section-title::before {
       content: "";
       position: absolute;
-      margin-top: 22px;
-      margin-left: -68px;
-      width: 30px;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      width: auto;
       height: 3px;
-      background-color: #68b738; }
-    .inner-section-title::after {
-      width: 322px;
       margin-top: 22px;
-      margin-left: 41px; } }
+      background-color: #68b738; } }
 
 @media (min-width: 1300px) {
   .inner-section-title {
-    width: 1300px;
-    padding: 0 40px; }
-    .inner-section-title::after {
-      width: 880px; } }
+    padding: 0 40px; } }
 
 .food {
   margin: 0;
