@@ -40,7 +40,7 @@
 
       <section class="selection main__selection">
         <div class="container">
-          <h2 class="inner-page-title inner-page-title--form">Подбор программы</h2>
+          <h1 class="inner-page-title inner-page-title--form">Подбор программы</h1>
           <p class="selection__subtitle">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
         </div>
 
@@ -49,6 +49,7 @@
           <div class="form__initials-wrapper">
             <h2 class="visually-hidden">Общие данные</h2>
             <fieldset class="form__group form__group--initials">
+              <h3 class="visually-hidden">Данные</h3>
               <div class="container container--with-paddings">
                 <div class="form__row">
                   <label class="form__label form__label--input" for="name">Имя:*</label>
@@ -65,15 +66,18 @@
               </div>
             </fieldset>
             <fieldset class="form__group form__group--radio">
+              <h3 class="visually-hidden">Выбор программы</h3>
               <div class="container container--with-paddings">
-                <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="losing" value="losing" checked>
-                <label class="form__label form__label--radio" for="losing">Похудение</label>
+                <div class="form__radio-wrapper">
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="losing" value="losing" checked>
+                  <label class="form__label form__label--radio" for="losing">Похудение</label>
 
-                <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="having" value="having">
-                <label class="form__label form__label--radio" for="having">Набор массы</label>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="having" value="having">
+                  <label class="form__label form__label--radio" for="having">Набор массы</label>
 
-                <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="no" value="no">
-                <label class="form__label form__label--radio" for="no">Не знаю (нужен ваш совет)</label>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="no" value="no">
+                  <label class="form__label form__label--radio" for="no">Не знаю (нужен ваш совет)</label>
+                </div>
               </div>
             </fieldset>
           </div>
@@ -109,31 +113,33 @@
           <fieldset class="form__group form__group--add">
             <div class="container container--with-paddings">
               <h2 class="inner-section-title inner-section-title--add">Дополнительно</h2>
-              <div class="form__row">
-                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked="">
-                <label class="form__label form__label--checkbox" for="sugar">Сахарозаменитель</label>
-              </div>
+              <div class="form__add-wrapper">
+                <div class="form__row form__row--add">
+                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="sugar" id="sugar" checked="">
+                  <label class="form__label form__label--checkbox" for="sugar">Сахарозаменитель</label>
+                </div>
 
-              <div class="form__row">
-                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
-                <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
-              </div>
+                <div class="form__row form__row--add">
+                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="water" id="water">
+                  <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
+                </div>
 
-              <div class="form__row">
-                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
-                <label class="form__label form__label--checkbox" for="milk">Молоко</label>
-              </div>
+                <div class="form__row form__row--add">
+                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="milk" id="milk">
+                  <label class="form__label form__label--checkbox" for="milk">Молоко</label>
+                </div>
 
-              <div class="form__row">
-                <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
-                <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+                <div class="form__row form__row--add">
+                  <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
+                </div>
               </div>
             </div>
           </fieldset>
 
           <div class="form__submit-section container container--with-paddings">
             <button class="form__order button" type="submit">Отправить заявку</button>
-            <p class="form__required">* - Обязательные поля</p>
+            <p class="form__required">* — Обязательные поля</p>
           </div>
 
         </form>

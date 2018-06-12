@@ -42,7 +42,7 @@
 
 @media(min-width: $tablet) {
   .inner-section-title {
-    padding: 0 37px;
+    padding: 0 39px;
     font-size: 36px;
     line-height: 36px;
 
@@ -61,6 +61,22 @@
       margin-top: 22px;
       background-color: #68b738;
     }
+  }
+
+  .inner-section-title--contacts {
+    margin-bottom: 74px;
+
+    br {
+      display: none;
+    }
+  }
+
+  .inner-section-title--comments {
+    margin-bottom: 73px;
+  }
+
+  .inner-section-title--add {
+    margin-bottom: 60px;
   }
 }
 

@@ -140,6 +140,7 @@
   text-align: center;
   font-family: "Arial", sans-serif;
   line-height: 16px;
+  color: #444444;
 }
 
 .form__row--svg {
@@ -157,4 +158,140 @@
 
 .form__svg--tel {
   right: 14px;
+}
+
+@media(min-width: $tablet) {
+  .form__group {
+
+    &--initials {
+      padding-bottom: 52px;
+      border: none;
+    }
+
+    &--radio {
+      padding-top: 0;
+      border: none;
+    }
+
+    &--contacts {
+      margin-bottom: 65px;
+      padding-top: 0;
+    }
+
+    &--comments {
+      margin-bottom: 64px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .form__initials-wrapper {
+    margin-bottom: 75px;
+  }
+
+  .form__row {
+    padding-left: 41px;
+    padding-right: 37px;
+
+    &--add {
+      width: 50%;
+    }
+  }
+
+  .form__add-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--input {
+      margin-right: 17px;
+    }
+
+    &--radio {
+      margin-bottom: 32px;
+      padding-left: 60px;
+
+      &::before {
+        margin-left: -59px;
+        margin-top: -11px;
+        width: 40px;
+        height: 40px;
+        border: 10px solid #ffffff;
+      }
+    }
+
+    &--email,
+    &--tel {
+      margin-right: 16px;
+    }
+
+    &--checkbox {
+      margin-bottom: 50px;
+      padding-left: 60px;
+
+      &::before {
+        margin-top: -8px;
+        margin-left: -61px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .form__input--checkbox:checked +.form__label--checkbox::after {
+    margin-top: 5px;
+    left: 50px;
+  }
+
+  .form__radio-wrapper {
+    width: 630px;
+    min-height: 196px;
+    margin: 0 auto;
+    padding: 35px 28px 0 28px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .form__input {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &--tel {
+      margin-bottom: 0;
+    }
+
+    &--textarea {
+      display: block;
+      width: 630px;
+      margin: 0 auto;
+    }
+  }
+
+  .form__svg--mail {
+    margin-top: 23px;
+    right: 60px;
+  }
+
+  .form__svg--tel {
+    margin-top: 23px;
+    right: 56px;
+  }
+
+  .form__submit-section {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .form__order {
+    margin-bottom: 0;
+    margin: 0 60px 0 40px;
+  }
+
+  .form__required {
+    font-size: 16px;
+  }
 }
