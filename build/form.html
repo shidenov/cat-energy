@@ -38,19 +38,19 @@
 
     <main class="main">
 
-      <section class="selection main__selection">
-        <div class="container">
+
+      <div class="container">
+        <section class="selection main__selection">
           <h1 class="inner-page-title inner-page-title--form">Подбор программы</h1>
           <p class="selection__subtitle">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
-        </div>
 
-        <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-          <div class="form__initials-wrapper">
-            <h2 class="visually-hidden">Общие данные</h2>
-            <fieldset class="form__group form__group--initials">
-              <h3 class="visually-hidden">Данные</h3>
-              <div class="container container--with-paddings">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
+
+            <div class="form__initials-wrapper">
+              <h2 class="visually-hidden">Общие данные</h2>
+              <fieldset class="form__group form__group--initials">
+                <h3 class="visually-hidden">Данные</h3>
                 <div class="form__row">
                   <label class="form__label form__label--input" for="name">Имя:*</label>
                   <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Барсик">
@@ -63,11 +63,9 @@
                   <label class="form__label form__label--input" for="age">Возраст&nbsp;(лет):*</label>
                   <input class="form__input form__input--text" type="text" name="age" id="age" placeholder="7">
                 </div>
-              </div>
-            </fieldset>
-            <fieldset class="form__group form__group--radio">
-              <h3 class="visually-hidden">Выбор программы</h3>
-              <div class="container container--with-paddings">
+              </fieldset>
+              <fieldset class="form__group form__group--radio">
+                <h3 class="visually-hidden">Выбор программы</h3>
                 <div class="form__radio-wrapper">
                   <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="losing" value="losing" checked="checked">
                   <label class="form__label form__label--radio" for="losing">Похудение</label>
@@ -78,40 +76,36 @@
                   <input class="form__input form__input--radio visually-hidden" type="radio" name="radio" id="no" value="no">
                   <label class="form__label form__label--radio" for="no">Не знаю (нужен ваш совет)</label>
                 </div>
-              </div>
-            </fieldset>
-          </div>
+              </fieldset>
+            </div>
 
-          <fieldset class="form__group form__group--contacts">
-            <div class="container container--with-paddings">
+            <fieldset class="form__group form__group--contacts">
               <h2 class="inner-section-title inner-section-title--contacts">Контактные данные<br> (владелец кота)</h2>
 
-              <div class="form__row form__row--svg">
-                <label class="form__label form__label--email" for="name">E&#8209;mail:*</label>
-                <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="shidenov@gmail.com">
-                <svg class="form__svg--mail" width="17" height="13">
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
+              <div class="form__contacts--wrapper">
+                <div class="form__row form__row--svg">
+                  <label class="form__label form__label--email" for="name">E&#8209;mail:*</label>
+                  <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="shidenov@gmail.com">
+                  <svg class="form__svg--mail" width="17" height="13">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </div>
+                <div class="form__row form__row--svg">
+                  <label class="form__label form__label--tel" for="name">Телефон:*</label>
+                  <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="87076942574">
+                  <svg class="form__svg--tel" width="20" height="20">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </div>
               </div>
-              <div class="form__row form__row--svg">
-                <label class="form__label form__label--tel" for="name">Телефон:*</label>
-                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="87076942574">
-                <svg class="form__svg--tel" width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="form__group form__group--comments">
-            <div class="container container--with-paddings">
+            <fieldset class="form__group form__group--comments">
               <h2 class="inner-section-title inner-section-title--comments">Комментарий</h2>
               <textarea class="form__input form__input--textarea" name="textarea" id="textarea" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="form__group form__group--add">
-            <div class="container container--with-paddings">
+            <fieldset class="form__group form__group--add">
               <h2 class="inner-section-title inner-section-title--add">Дополнительно</h2>
               <div class="form__add-wrapper">
                 <div class="form__row form__row--add">
@@ -134,16 +128,16 @@
                   <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
                 </div>
               </div>
+            </fieldset>
+
+            <div class="form__submit-section">
+              <button class="form__order button" type="submit">Отправить заявку</button>
+              <p class="form__required">* — Обязательные поля</p>
             </div>
-          </fieldset>
 
-          <div class="form__submit-section container container--with-paddings">
-            <button class="form__order button" type="submit">Отправить заявку</button>
-            <p class="form__required">* — Обязательные поля</p>
-          </div>
-
-        </form>
-      </section>
+          </form>
+        </section>
+      </div>
 
       <section class="contacts-section contacts-section--catalog main__contacts-section">
         <div class="contacts contacts-section__address container container--with-paddings">

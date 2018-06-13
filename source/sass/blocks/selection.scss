@@ -14,3 +14,9 @@
     line-height: 30px;
   }
 }
+
+@media(min-width: $desktop) {
+  .selection__subtitle {
+    padding: 0 40px;
+  }
+}

@@ -759,7 +759,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     z-index: 1;
     top: 86px;
-    left: 50px;
+    margin-left: 37px;
     margin-bottom: 0;
     background-color: #ffffff; } }
 
@@ -892,7 +892,9 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1300px) {
   .inner-page-title {
-    padding: 0 40px; } }
+    padding: 0 40px; }
+  .inner-page-title--form {
+    margin: 73px 0 55px 0; } }
 
 .main__promo {
   margin-bottom: 22px; }
@@ -930,7 +932,9 @@ input[type="radio"].visually-hidden {
   .main__catalog {
     margin-bottom: 67px; }
   .main__extra {
-    padding-bottom: 75px; } }
+    padding-bottom: 75px; }
+  .main__selection {
+    padding-bottom: 72px; } }
 
 @media (min-width: 1300px) {
   .main__advantages {
@@ -945,7 +949,9 @@ input[type="radio"].visually-hidden {
   .main__catalog {
     margin-bottom: 75px; }
   .main__extra {
-    padding-bottom: 85px; } }
+    padding-bottom: 85px; }
+  .main__selection {
+    padding-bottom: 82px; } }
 
 .button {
   display: block;
@@ -1379,9 +1385,13 @@ input[type="radio"].visually-hidden {
     font-size: 20px;
     line-height: 30px; } }
 
+@media (min-width: 1300px) {
+  .selection__subtitle {
+    padding: 0 40px; } }
+
 .form__group {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none; }
   .form__group--initials {
     padding-bottom: 8px;
@@ -1475,6 +1485,9 @@ input[type="radio"].visually-hidden {
   .form__input:focus, .form__input:active {
     outline-color: #68b738; }
 
+.form__submit-section {
+  padding: 0 20px; }
+
 .form__order {
   margin-bottom: 20px;
   font-family: "OswaldRegular", "Arial", sans-serif;
@@ -1504,19 +1517,21 @@ input[type="radio"].visually-hidden {
   right: 14px; }
 
 @media (min-width: 768px) {
-  .form__group--initials {
-    padding-bottom: 52px;
-    border: none; }
-  .form__group--radio {
-    padding-top: 0;
-    border: none; }
-  .form__group--contacts {
-    margin-bottom: 65px;
-    padding-top: 0; }
-  .form__group--comments {
-    margin-bottom: 64px;
-    padding-top: 0;
-    padding-bottom: 0; }
+  .form__group {
+    padding: 0 30px; }
+    .form__group--initials {
+      padding-bottom: 52px;
+      border: none; }
+    .form__group--radio {
+      padding-top: 0;
+      border: none; }
+    .form__group--contacts {
+      margin-bottom: 65px;
+      padding-top: 0; }
+    .form__group--comments {
+      margin-bottom: 64px;
+      padding-top: 0;
+      padding-bottom: 0; }
   .form__initials-wrapper {
     margin-bottom: 75px; }
   .form__row {
@@ -1585,12 +1600,56 @@ input[type="radio"].visually-hidden {
     display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
-            align-items: baseline; }
+            align-items: baseline;
+    margin-top: 10px;
+    padding: 0 30px; }
   .form__order {
     margin-bottom: 0;
     margin: 0 60px 0 40px; }
   .form__required {
     font-size: 16px; } }
+
+@media (min-width: 1300px) {
+  .form__group {
+    padding: 0 40px; }
+    .form__group--initials, .form__group--radio {
+      width: 650px; }
+  .form__initials-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 52px; }
+  .form__contacts--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__radio-wrapper {
+    width: 570px;
+    padding-bottom: 11px; }
+  .form__add-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__row {
+    padding: 0; }
+    .form__row--svg {
+      width: 570px; }
+    .form__row--add {
+      width: 245px; }
+  .form__input--checkbox:checked + .form__label--checkbox::after {
+    left: 9px; }
+  .form__label--radio {
+    margin-bottom: 35px; }
+  .form__input--textarea {
+    width: 1220px; }
+  .form__submit-section {
+    padding: 0 40px; }
+  .form__order {
+    width: 570px;
+    margin: 0 80px 0 0; } }
 
 .promo {
   padding-top: 27px;

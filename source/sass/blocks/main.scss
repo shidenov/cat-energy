@@ -53,6 +53,10 @@
   .main__extra {
     padding-bottom: 75px;
   }
+
+  .main__selection {
+    padding-bottom: 72px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -80,5 +84,9 @@
 
   .main__extra {
     padding-bottom: 85px;
+  }
+
+  .main__selection {
+    padding-bottom: 82px;
   }
 }
