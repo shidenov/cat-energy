@@ -2,6 +2,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover svg {
+    fill: #68b738;
+  }
+
+  &:active svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__html {

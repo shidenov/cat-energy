@@ -27,9 +27,9 @@
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           </div>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
-            <li class="site-list__item site-list__item--active"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+            <li class="site-list__item"><a href="index.html">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
@@ -53,7 +53,7 @@
                 <h3 class="visually-hidden">Данные</h3>
                 <div class="form__row">
                   <label class="form__label form__label--input" for="name">Имя:*</label>
-                  <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Барсик">
+                  <input class="form__input form__input--text" type="text" name="name" id="name" placeholder="Барсик" invalid="true">
                 </div>
                 <div class="form__row">
                   <label class="form__label form__label--input" for="weight">Вес&nbsp;(кг):*</label>
@@ -84,14 +84,14 @@
 
               <div class="form__contacts--wrapper">
                 <div class="form__row form__row--svg">
-                  <label class="form__label form__label--email" for="name">E&#8209;mail:*</label>
+                  <label class="form__label form__label--email" for="email">E&#8209;mail:*</label>
                   <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="shidenov@gmail.com">
                   <svg class="form__svg--mail" width="17" height="13">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
                 </div>
                 <div class="form__row form__row--svg">
-                  <label class="form__label form__label--tel" for="name">Телефон:*</label>
+                  <label class="form__label form__label--tel" for="tel">Телефон:*</label>
                   <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="87076942574">
                   <svg class="form__svg--tel" width="20" height="20">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
@@ -139,22 +139,22 @@
         </section>
       </div>
 
-      <section class="contacts-section contacts-section--catalog main__contacts-section">
+      <section class="contacts-section main__contacts-section">
         <div class="contacts contacts-section__address container container--with-paddings">
           <p class="contacts__appeal">приглашаем<br>к сотрудничеству<br>дилеров!</p>
           <address class="contacts__address">
             ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div class="map contacts-section__map container">
-          <picture>
+        <div class="map contacts-section__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5877676994542!2d30.321817295508534!3d59.938982283259875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2skz!4v1528978701598" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <picture class="picture">
             <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
             <img src="img/bg-map-mobile@1x.png" alt="map">
           </picture>
         </div>
       </section>
-
     </main>
 
 
@@ -195,7 +195,7 @@
         </ul>
 
         <div class="copyright footer__copyright">
-          <span class="copyright__html">HTML Academy</span>
+          <a href="https://htmlacademy.ru/program" class="copyright__html">HTML Academy</a>
           <svg width="27" height="34">
             <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>

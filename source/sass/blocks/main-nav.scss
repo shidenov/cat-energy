@@ -14,10 +14,26 @@
 @media (max-width: $mobile) {
   .main-nav__cat-link {
     margin-top: 11px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-nav__caption-link {
     margin-top: 24px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .main-nav__toggle {
@@ -77,6 +93,14 @@
   .main-nav__cat-picture {
     width: 173px;
     height: 58px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 

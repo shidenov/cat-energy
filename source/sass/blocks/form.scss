@@ -61,6 +61,10 @@
       box-shadow: 0 0 0 1px #cecece;
       border-radius: 50%;
     }
+
+    &:hover::before {
+      box-shadow: 0 0 0 1px  #868686;
+    }
   }
 
   &--email,
@@ -81,6 +85,10 @@
       margin-top: -6px;
       border: 1px solid #cfcfcf;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 
@@ -100,7 +108,7 @@
 
 .form__input {
   margin-bottom: 15px;
-  padding: 13px;
+  padding: 13px 40px 13px 13px;
   font-family: "OswaldRegular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -121,9 +129,17 @@
     resize: none;
   }
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
   &:focus,
   &:active {
     outline-color: #68b738;
+  }
+
+  &:invalid:active {
+    outline-color: #ff8282;
   }
 }
 
@@ -155,13 +171,24 @@
 .form__svg--tel,
 .form__svg--mail {
   position: absolute;
-  margin-top: 13px;
-  right: 17px;
   fill: #222222;
+}
+
+.form__svg--mail {
+  margin-top: 16px;
+  right: 17px;
 }
 
 .form__svg--tel {
   right: 14px;
+  margin-top: 13px;
+}
+
+.form__input:focus + .form__svg--tel,
+.form__input:active + .form__svg--tel,
+.form__input:focus + .form__svg--mail,
+.form__input:active + .form__svg--mail {
+  fill: #68b738;
 }
 
 @media(min-width: $tablet) {
@@ -262,6 +289,7 @@
 
   .form__input {
     margin-bottom: 20px;
+    padding: 13px 50px 13px 13px;
     font-size: 20px;
     line-height: 20px;
 
@@ -343,6 +371,15 @@
     &--add {
       width: 245px;
     }
+  }
+
+  .form__svg--mail {
+    right: 25px;
+  }
+
+  .form__svg--tel {
+    right: 20px;
+    margin-top: 20px;
   }
 
   .form__input--checkbox:checked+.form__label--checkbox::after {

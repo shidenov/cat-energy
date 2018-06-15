@@ -10,6 +10,14 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {

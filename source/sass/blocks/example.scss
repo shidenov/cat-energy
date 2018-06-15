@@ -99,6 +99,16 @@
   text-transform: uppercase;
   background-color: transparent;
   border: none;
+
+  &:hover {
+    border-bottom: 1px solid #aeaeae;
+  }
+
+  &:active,
+  &:focus {
+    border-bottom: 1px solid transparent;
+    outline: none;
+  }
 }
 
 .example__scale {
